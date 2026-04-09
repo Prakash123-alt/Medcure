@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Git
+.git/
+.gitignore
+
+# Secrets (set via Cloud Run env vars instead)
+.env
+
+# Dev tools
+*.md
+langgraph.json
+export_new_diagram.py
+architecture_diagrams/
+langchain-academy/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/

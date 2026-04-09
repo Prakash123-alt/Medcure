@@ -1,0 +1,75 @@
+# environments
+.env
+.env.*
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# os
+.DS_Store
+Thumbs.db
+
+# DB / vector store
+*.db
+*.db-shm
+*.db-wal
+*.sqlite3
+medical_ai_agent/chroma_db/
+
+# Uploads & generated audio (runtime artifacts)
+medical_ai_agent/uploads/
+
+# Large datasets — use Git LFS or load separately
+medical_ai_agent/dataset/
+
+# LangGraph internal state
+.langgraph_api/
+
+# Log files
+*.log
+output.log
+logs*.txt
+cloud_logs*.txt
+cloud_logs*.json
+db_setup_out.txt
+vision_output.txt
+debug_state.json
+
+# Debug / scratch scripts
+debug_db*.py
+test_twilio*.py
+test_audio*.py
+test_gemini*.py
+test_logprobs*.py
+test_outbound*.py
+test_graph.py
+test_vision.py
+test2.py
+test3.py
+test4.py
+run_ngrok.py
+export_diagrams.py
+export_new_diagram.py
+
+# Old model experiment scripts
+model_*.py
+langchain-academy/
+agentmodel.ipynb
+langgraph_01.ipynb
+
+# IDE
+.vscode/
+.idea/
+
+# Jupyter
+*.ipynb
+.ipynb_checkpoints/
