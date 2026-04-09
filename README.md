@@ -1,0 +1,2 @@
+# Medcure
+AI Health Companion
