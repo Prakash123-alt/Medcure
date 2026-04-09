@@ -1,0 +1,54 @@
+flowchart TD
+    START((START)) --> ROUTE_START{"Input Type?"}
+    
+    ROUTE_START -- "image_path" --> OCR["🔍 ocr_extraction"]
+    ROUTE_START -- "food_image_path" --> NUTRI["🥗 nutritionist\n(Food Vision)"]
+    ROUTE_START -- "text" --> TRIAGE["🧠 triage\n(triage_and_respond)"]
+
+    %% OCR Flow
+    OCR --> VERIFY["✅ verification"]
+    VERIFY --> CTX["📋 context_retrieval"]
+
+    %% Triage Routing
+    TRIAGE --> TRIAGE_ROUTE{"Triage Level?"}
+    
+    %% L1 Fast
+    TRIAGE_ROUTE -- "L1: Casual/Factual\n(Response Generated)" --> END((END))
+    
+    %% L2 DB Only
+    TRIAGE_ROUTE -- "L2: Simple Clinical" --> CTX_FAST["⚡ context_retrieval_fast"]
+    CTX_FAST --> PERSONA["🎭 persona"]
+
+    %% L3 Full Pipeline
+    TRIAGE_ROUTE -- "L3: Complex" --> CTX
+    CTX --> RAG["📚 aiims_rag"]
+    RAG --> REASON["🤖 reasoning"]
+    
+    %% Reasoner Loop
+    REASON --> REASON_ROUTE{"Requires\nResearch?"}
+    REASON_ROUTE -- "Yes" --> RESEARCH["🔎 researcher"]
+    RESEARCH --> REASON
+    
+    REASON_ROUTE -- "No" --> PERSONA
+
+    %% Emergency Flow
+    TRIAGE_ROUTE -- "🚨 Emergency" --> HITL["🚑 human_in_the_loop"]
+
+    %% Nutrition Flow
+    NUTRI --> PERSONA
+
+    %% Output Output
+    PERSONA --> END
+
+    %% Node Styling
+    classDef input fill:#1a1a2e,stroke:#00d4ff,color:#fff
+    classDef fast fill:#0f3460,stroke:#00ff88,color:#fff
+    classDef l3 fill:#16213e,stroke:#7c4dff,color:#fff
+    classDef output fill:#0d2137,stroke:#ff6b35,color:#fff
+    classDef danger fill:#3d0000,stroke:#ff0000,color:#fff
+
+    class START,ROUTE_START input
+    class TRIAGE,CTX_FAST,NUTRI fast
+    class CTX,RAG,REASON,RESEARCH l3
+    class PERSONA output
+    class HITL danger

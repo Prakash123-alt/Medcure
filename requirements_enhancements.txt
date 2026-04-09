@@ -1,0 +1,10 @@
+# Redis for caching
+redis>=5.0.0
+
+# Existing RAG dependencies
+langchain-google-vertexai
+langchain-google-cloud-sql-pg
+psycopg2-binary
+
+# Additional dependencies for the enhanced system
+python-dateutil  # For date parsing in scheduler

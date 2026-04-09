@@ -1,0 +1,10 @@
+{
+    "dependencies": [
+        "."
+    ],
+    "graphs": {
+        "sister_nani": "./medical_ai_agent/graph.py:build_graph",
+        "hierarchical": "./hierarchical_agent/graph.py:build_graph"
+    },
+    "env": ".env"
+}

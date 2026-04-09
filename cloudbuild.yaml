@@ -1,0 +1,29 @@
+steps:
+  # 1. Build the Docker image
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['build', '-t', 'us-central1-docker.pkg.dev/$PROJECT_ID/curemate-repo/curemate-api:latest', '.']
+
+  # 2. Push to Artifact Registry
+  - name: 'gcr.io/cloud-builders/docker'
+    args: ['push', 'us-central1-docker.pkg.dev/$PROJECT_ID/curemate-repo/curemate-api:latest']
+
+  # 3. Deploy to Cloud Run
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args:
+      - 'run'
+      - 'deploy'
+      - 'curemate-api'
+      - '--image'
+      - 'us-central1-docker.pkg.dev/$PROJECT_ID/curemate-repo/curemate-api:latest'
+      - '--region'
+      - 'us-central1'
+      - '--vpc-connector'
+      - 'curemate-vpc-connector'
+      - '--set-env-vars'
+      - 'GCS_BUCKET_NAME=curemate-audio-uploads-fluted-gantry'
+      - '--add-cloudsql-instances'
+      - '$PROJECT_ID:us-central1:curemate-postgres'
+
+options:
+  logging: CLOUD_LOGGING_ONLY

@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "curemate-rat"
+version = "1.0.0"
+description = "CureMate RAT — Retrieval-Augmented Thinking engine for clinical AI"
+readme = "curemate_rat/README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "CureMate Team"},
+]
+
+dependencies = [
+    "pydantic>=2.0",
+]
+
+[project.optional-dependencies]
+deepseek = ["openai>=1.0"]
+google   = ["langchain-google-genai"]
+dev = [
+    "pytest>=7.0",
+    "pytest-asyncio>=0.21",
+]
+all = [
+    "curemate-rat[deepseek,google,dev]",
+]
+
+[tool.setuptools.packages.find]
+include = ["curemate_rat*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["curemate_rat/tests"]

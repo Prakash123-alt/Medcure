@@ -1,0 +1,78 @@
+flowchart TD
+    %% ASYNC WEBHOOK ENTRY
+    WA[("📱 WhatsApp User")] --> WH["FastAPI Webhook"]
+    WH -- "1. 200 OK (Instant)" --> WA
+    WH -- "2. Trigger Background Task" --> START
+
+    START((START)) --> ROUTE_START{"Input Type?"}
+    
+    %% INGESTION
+    ROUTE_START -- "🖼️ image_path" --> OCR["🔍 ocr_extraction"]
+    ROUTE_START -- "🥗 food_image" --> NUTRI["🥗 nutritionist"]
+    ROUTE_START -- "💬 text" --> TRIAGE["🧠 Smart Triage\n(Speculative Routing)"]
+
+    %% OCR PATH
+    OCR --> VERIFY["✅ verification"]
+    VERIFY --> CTX_L3
+
+    %% SMART TRIAGE
+    TRIAGE --> TRIAGE_ROUTE{"Triage Level?"}
+    
+    %% L1 FAST (Conversational)
+    TRIAGE_ROUTE -- "L1: Casual/Factual\n(~2s)" --> PERSONA
+    
+    %% L2 DB ONLY w/ REDIS CACHE
+    TRIAGE_ROUTE -- "L2: Simple Clinical\n(~2s)" --> REDIS{"Is in\nRedis Cache?"}
+    REDIS -- "Yes (Cache Hit)" --> PERSONA
+    REDIS -- "No (DB Fetch)" --> CTX_FAST["⚡ PG Snapshot"]
+    CTX_FAST --> CACHE_SET["💾 Set Redis Cache"]
+    CACHE_SET --> PERSONA
+
+    %% L3 COMPLEX (DeepSeek MoE + Speculative Search)
+    TRIAGE_ROUTE -- "L3: Complex\n(~10-15s)" --> SPEC_ROUTE{"Needs Search\n(Predicted)?"}
+    
+    %% Parallel Speculative Search
+    SPEC_ROUTE -- "Yes" --> RESEARCH["🔎 researcher\n(Gemini 2.5)"]
+    SPEC_ROUTE -- "Yes" --> CTX_L3["📋 Full Context\n(Snapshot + Memories)"]
+    SPEC_ROUTE -- "No" --> CTX_L3
+    
+    RESEARCH --> RAG
+    CTX_L3 --> RAG["📚 HYBRID Search\n(pgvector + BM25)"]
+    
+    RAG --> REASON["🤖 Clinical Reasoning\n(DeepSeek-R1 CoT)"]
+    
+    REASON --> PERSONA
+
+    %% NUTRITION PATH
+    NUTRI --> PERSONA
+
+    %% EMERGENCY
+    TRIAGE_ROUTE -- "🚨 Emergency" --> HITL["🚑 human_in_the_loop"]
+
+    %% OUTPUT & GUARDRAILS
+    PERSONA["🎭 persona\n(Empathy Formatting)"] --> GUARD["🛡️ Strict Guardrail\nGrader Node"]
+    
+    GUARD -- "Pass" --> SEND["📤 Twilio OUTBOUND API"]
+    GUARD -- "Fail (Hallucinated)" --> REASON
+    
+    SEND --> WA
+    SEND --> MEMORY["🧠 Background Memory"]
+
+    %% Styling
+    classDef input fill:#1a1a2e,stroke:#00d4ff,color:#fff
+    classDef async fill:#4a1c40,stroke:#ff007f,color:#fff,stroke-dasharray: 5 5
+    classDef fast fill:#0f3460,stroke:#00ff88,color:#fff
+    classDef cache fill:#003300,stroke:#00aa00,color:#fff
+    classDef l3 fill:#16213e,stroke:#7c4dff,color:#fff
+    classDef output fill:#0d2137,stroke:#ff6b35,color:#fff
+    classDef guard fill:#4d4d00,stroke:#ffff00,color:#fff
+    classDef danger fill:#3d0000,stroke:#ff0000,color:#fff
+
+    class WA,WH input
+    class START async
+    class TRIAGE,PERSONA fast
+    class REDIS,CACHE_SET cache
+    class CTX_L3,RAG,REASON,RESEARCH l3
+    class SEND,MEMORY output
+    class GUARD guard
+    class HITL danger

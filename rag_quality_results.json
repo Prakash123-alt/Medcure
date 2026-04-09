@@ -1,0 +1,80 @@
+{
+  "Clinical management and treatment guidelines for: Type 2 Diabetes": {
+    "results": [
+      {
+        "distance": 0.31614749920158003,
+        "content": "Endocrine Diseases\n119\nor at bedtime in combination with Tab. metformin. Insulin is also required in situations\nlike pregnancy, surgery, infection, etc.\nFigure 1. Algorithm for management of Type 2 DM\nTable 2. Oral hypoglycaemic drugs with their dose and their common ADRs\nDrugs\nDose\nHbA1c\nreduction\n(%)\nAdvantages\nDisadvantages\nContraindications\nBiguanides\nMetformin\nInitially\n500mg OD to\nmax \n2000\nmg/d\n1-2\nWeight\nneutral,\nDo not cause\nhypoglycemia\n, inexpensive\nDiarrhoea,\nnausea, lactic\nacidosis\nSerum \ncreatinine\n>1.5 mg/dl (men)\n>1.4 \nmg/dl\n(women), \nCHF,\nradiographic\ncontrast \nstudies,\nseriously ill patients,\nacidosis\nInsulin secretagogues: Sulfonylureas\nGlimepiride\nGlipizide\nGlyburide\n1-8mg/d\n5-40mg/d\n1.25-20mg/d\n1-2\nInexpensive\nHypoglycemia,\nweight gain\nRenal/liver disease\nInsulin secretagogues: Non-sulfonylureas\nRepaglinide\n0.5-16mg/d\n1-2\nShort onset of\naction, lower\npostprandial\nglucose\nHypoglycemia\nRenal/liver disease\nThiazolidinediones\nPioglitazone\n15-45 mg/d\n0.5-1.4"
+      },
+      {
+        "distance": 0.3251894613710671,
+        "content": "diseases, keeping in mind the rational use of medicines. It is a blend of evidence from\nstandard text and reference books with consensus of specialists. The guidelines are\ncomprehensive, concise and seek to summarize treatment plan for patients with priority\ndiseases. It is assumed that the patient has been fully evaluated and all co-morbidities\nidentified. Under each clinical condition, the treatment plan has been suggested that can be\napplied to average patient with common presentation. However, there may be great variations\nin patient presentation, their family history, treatment preferences and tolerance for different\nside effect. Therefore, these guidelines can be viewed as an expert consultation and weighed\nwith respect to other information. Moreover, the recommendations do not replace clinical\njudgment nor encroach on clinical flexibility, which must be tailored to the particular needs\nof each clinical situation."
+      },
+      {
+        "distance": 0.34120076159746593,
+        "content": "Endocrine Diseases\n120\nweight \ngain,\nfractures,\nmacular edema\n\u03b1 -Glucosidase inhibitors\nAcarbose\nVoglibose\n50-100mg\n0.2-0.3mg\n(per meal)\n0.5-0.8\nReduce\npostprandial\nglycemia\nGI flatulence,\nliver function\ntests\nRenal/liver disease\nDipeptidyl peptidase IV inhibitors\nSaxagliptin\nSitagliptin\nVildagliptin\n2.5-5mg/d\n100mg/d\n50-100mg/d\n0.5-0.8\nDo not cause\nhypoglycemia\nReduce dose with\nrenal disease\nPatient education\n\uf0b7\nEducation topics important for optimal diabetes care include self-monitoring of blood\nglucose; urine ketone monitoring (type 1 DM); insulin administration; guidelines for\ndiabetes management during illnesses; prevention and management of hypoglycaemia,\nfoot and skin care; diabetes management before, during, and after exercise; and risk\nfactor\u2013modifying activities.\n\uf0b7\nMedical nutrition therapy (MNT) is a term used to describe the optimal coordination of\ncaloric intake with other aspects of diabetes therapy (insulin, exercise, weight loss)."
+      },
+      {
+        "distance": 0.3475105543573245,
+        "content": "Endocrine Diseases\n124\ndomperidone, 10\u201320 mg, before each meal. Erythromycin\nmay promote gastric emptying.\n\uf0b7\nDiabetic diarrhoea treated with loperamide and may respond\nto octreotide (50\u201375 g three times daily, SC).\nDiabetic Cystopathy\n\uf0b7\nTimed voiding or self-catheterization, possibly with the\naddition of bethanechol.\n\uf0b7\nDrugs that inhibit type 5 phosphodiesterase are effective for\nerectile dysfunction\nMacrovascular Complication- Atherosclerotic cardiovascular disease are the common\ncause of death in diabetic population\nAtherosclerotic CVD are the common cause of death in diabetic population.\nRisk factor reduction is important. The important lipid target are as follows\n\uf0b7\nLDL < 2.6 mmol/l (100 mg/dl);\n\uf0b7\nHDL >1 mmol/l (40 mg/dl) in men and >1.3 mmol/l (50 mg/dl) in women; and\n\uf0b7\nTriglycerides<1.7 mmol/l (150 mg/dl).\nIf the patient is known to have CHD, an LDL goal of <1.8 mmol/L (70 mg/dl).\nGestational Diabetes\nPlease refer Obstetrics and Gynecology chapter \u2013 Pregnancy with diabetes."
+      },
+      {
+        "distance": 0.35253509279752027,
+        "content": "2).\n\uf0b7\nTherapy can be started with either sulfonylureas or Metformin. Metformin has the\nadvantage of promoting mild weight loss in obese patients.\n\uf0b7\nTreatment may be started with any of the following drugs: Tab. glimipride l-8mg/day Or\nTab. glipizide 2.5 - 40 mg/day. Or Tab. glipizide extended release 5-10 mg/day Or Tab.\nglyburide (glibenclamide) 1.25-20 mg/day. Or Tab. metformin 500 mg once or twice a\nday in obese patients and increase the dose to 1000 mg 2 times a day; The dose can be\nincreased every 2-3 weeks. All drugs should be taken 30-45 min before meals.\n\uf0b7\nCombination therapy, following combination can be given if inadequate glycaemic\ncontrol with single oral hypoglycaemic agent: Sulphonylurea + metformin\n\uf0b7\nInsulin may be required in patients with primary or secondary failure to oral agents; often\nas single dose of intermediate acting insulin 0.3-0.4 units/kg/day either before breakfast"
+      }
+    ],
+    "good_count": 5,
+    "noisy_count": 0
+  },
+  "Clinical guidelines for: hypertension management and treatment": {
+    "results": [
+      {
+        "distance": 0.30794312447200756,
+        "content": "diseases, keeping in mind the rational use of medicines. It is a blend of evidence from\nstandard text and reference books with consensus of specialists. The guidelines are\ncomprehensive, concise and seek to summarize treatment plan for patients with priority\ndiseases. It is assumed that the patient has been fully evaluated and all co-morbidities\nidentified. Under each clinical condition, the treatment plan has been suggested that can be\napplied to average patient with common presentation. However, there may be great variations\nin patient presentation, their family history, treatment preferences and tolerance for different\nside effect. Therefore, these guidelines can be viewed as an expert consultation and weighed\nwith respect to other information. Moreover, the recommendations do not replace clinical\njudgment nor encroach on clinical flexibility, which must be tailored to the particular needs\nof each clinical situation."
+      },
+      {
+        "distance": 0.3448120990034145,
+        "content": "Cardiovascular Diseases\n83\n\uf0b7\nOptional tests include measurement of urinary albumin excretion or albumin/creatinine\nratio. More extensive testing for identifiable causes is not indicated generally unless BP\ncontrol is not achieved.\nPrecautions to be taken while measuring BP\n\uf0b7\nThe auscultatory method of BP measurement with a properly calibrated and validated\ninstrument should be used. BP should be measured using an appropriate size cuff in both\nupper limbs and at least one lower limb in both supine and erect posture.\n\uf0b7\nPatient should have been resting for at least 5 minutes and should not have consumed\ncoffee, smoked during the last 30 minutes before measuring the blood pressure. At least 2\nmeasurements should be made. Systolic BP is the point at which the first of 2 or more\nsounds are heard (phase 1) and diastolic BP is the point before the disappearance of\nsounds (phase 5).\nNon pharmacological treatment\n\uf0b7"
+      },
+      {
+        "distance": 0.35876643943513686,
+        "content": "infusion (dose to be titrated with BP, maximum dose for 10 meg only) Or\n\uf0b7\nInj. nitroglycerine 5-100mcg/min infusion Or\n\uf0b7\nInj. hydralazine 10-20 mg IV or IM, if no response at 20 mg change the drug Or\n\uf0b7\nInj. labetalol 20-80 mg IV every 5-10 min up to a total of 300 mg, infusion 0.5-2 mg/min,\noral 100-600 mg 2 times a day. Or\n\uf0b7\nInj. phentolamine 5-15 mg IV (especially useful in pheochromocytoma)\nMalignant hypertension\n\uf0b7\nPatients presenting with BP 200/140 mm Hg and evidence of vascular damage like\npapilledema, deranged renal function, should be referred to a tertiary care centre.\nResistant hypertension\n\uf0b7\nResistant hypertension is the failure to reach goal BP in patients who are adhering to full\ndoses of an appropriate 3-drug regimen that includes a diuretic. Refer these patients to\nhypertension specialist.\nFollow up\n\uf0b7\nRegular BP monitoring to ensure optimal or normal BP in young or middle aged or\ndiabetic subjects (130/80 mm Hg) and at least high normal BP in elderly patients (140/90"
+      },
+      {
+        "distance": 0.3663664458554281,
+        "content": "ml ethanol; e.g., 24 oz beer, 10 oz wine, or 3 oz 80-proof whiskey) per day in most men\nand to no more than 1 drink per day in women and lighter weight persons.\n\uf0b7\nCessation of smoking.\n\uf0b7\nYoga\nPharmacological treatment\n\uf0b7\nPre \u2013 hypertension: behavioral modification follow up\nStage 1: thiazide diuretics OR calcium channel blockers   or beta blockers or ACEI\nStage 2: Combination therapy (dosages to be adjusted according to blood pressure\nresponse)\n\uf0b7\nDiuretics preferred in obese, elderly, CCF\n\uf0b7\nBeta blockers in young, coronary artery disease (CAD), vascular headache, atrial\nfibrillation\n\uf0b7\nCalcium channel blockers in  elderly, CAD, ACEI in  diabetic, LVF, young\n\uf0b7\nAlpha blockers: prostatitism, dyslipidemia\n\uf0b7\nAlpha methyl dopa- pregnancy"
+      },
+      {
+        "distance": 0.3771408298486958,
+        "content": "Standard Treatment Guidelines (STGs), treatment protocols, and prescribing policies are\ndefined as systematically developed statements designed to assist prescribers in making\ndecisions about the appropriate treatment and health care for specific clinical problem.\nThese guidelines usually reflect the consensus on the optimal treatment options within a\nhealth facility or system. In fact, they represent one of the approaches to promote\ntherapeutically effective and economically efficient use of medicines.\nSTGs list the preferred pharmacological and non-pharmacological treatment for common\nhealth problems experienced by people in a specific health system. The pharmacological\ntreatment should include the name, dosage form, strength, average dose (pediatric and\nadult), number of doses per day, and duration of treatment. Other information on\ndiagnosis and advice to the patient may also be included. The most common diseases and"
+      }
+    ],
+    "good_count": 4,
+    "noisy_count": 1
+  },
+  "Clinical guidelines for: fever and headache in child": {
+    "results": [
+      {
+        "distance": 0.3675598145865131,
+        "content": "illness, started on the day of onset of fever. Dose can be adjusted if over sedation or ataxia\nnoted.\nContinuous prophylaxis\nPhenytoin and carbamazepine are ineffective for prophylaxis and phenobarbitone has serious\neffects on cognitive function. Sodium valproate is effective but potential risk does not justify\nits use.\nPatient education( parents/care taker)\n\uf0b7\nAssure the benign nature of the disease with  no neurological deficit or mental retardation\nas a result of simple febrile seizure.  Teach to control of fever and to give diazepam per\nrectally at home.\n\uf0b7\nRoutine immunization as per schedule should be followed. After DPT vaccination, oral\nparacetamol 15 mg/kg/dose every 6 h for 2 or 3 days and similarly, after measles\nvaccination, oral paracetamol in the same dose started on the 4th day from the day of\nvaccination and given for 3 to 4 days to avoid precipitation of febrile seizures.\nACUTE PYOGENIC MENINGITIS (CSF or clinically proven)"
+      },
+      {
+        "distance": 0.3675928695469173,
+        "content": "11\nChapter 2\nCOMMON CONDITIONS\nFEVER\nA body temperature greater than 37.7\u00b0C is defined as fever. Fever may be continuous,\nintermittent or remittent.\nInvestigations\nA meticulous history of chronology of symptoms, any associated focal symptom(s), exposure to\ninfectious agents and occupational history may be useful. A thorough physical examination\nrepeated on a regular basis may provide potentially diagnostic clues.\n\uf0b7\nIf there are no clinical clues, the tests include a complete haemogram with ESR, smear for\nmalaria parasite, blood culture, Widal test and urine analysis including urine culture.\n\uf0b7\nIf the febrile illness is prolonged to more than 2 weeks, an X-ray chest is indicated even in\nthe absence of respiratory symptoms. Any abnormal fluid collection should be sampled.\nTreatment\nRoutine use of antipyretics in low-grade fever is not justified. This may mask important clinical\nindications. However, in acute febrile illnesses suggestive of viral or bacterial cause, fever"
+      },
+      {
+        "distance": 0.379017638709062,
+        "content": "vaccination and given for 3 to 4 days to avoid precipitation of febrile seizures.\nACUTE PYOGENIC MENINGITIS (CSF or clinically proven)\nAcute meningitis is an acute inflammatory process involving brain tissue, due to infectious\ncauses. The common aetiological agents are viruses and bacteria. Children of any age may be\naffected.\nSalient features\n\uf0b7\nFever, headache, vomiting, irritability, altered state of consciousness, signs of\nmeningeal irritation and seizures. CSF examination differentiates the viral from\nbacterial causes."
+      },
+      {
+        "distance": 0.3938516729934899,
+        "content": "(102\u00b0F) or more of core temperature.\n-\nThey are of two types: Typical (Simple) febrile seizure occurs on day 1 of fever, does\nnot last  for more than 10 minutes; Atypical or complex febrile seizure may persist for\nmore than 15 minutes; it could be focal in nature; more than one episode of seizure in\n24 hours; associated with abnormal neurological findings or deficits. An organic cause\nsuch as an infectious or toxic process should be considered and investigated.\n\uf0b7\nExamination of CSF is to rule out possibility of meningitis in cases with first episode of\nfebrile seizures.\n\uf0b7\nEEG is not required in a simple case of febrile seizures. However, in cases with atypical\nfebrile seizure or in a child with high risk for developing epilepsy, it may be helpful."
+      },
+      {
+        "distance": 0.39873079967317737,
+        "content": "Pediatric Conditions\n372\nchildhood immunization may be considered when their immune status has improved\nfollowing anti-retroviral therapy.\n\uf0b7\nLapsed immunization: There is no need to restart a vaccine series regardless of the time\nthat has elapsed between individuals dose. In case of unknown or uncertain immunization\nstatus, however, it is appropriate to start the schedule as for an unimmunized child.\n\uf0b7\nMinor illnesses like fever, diarrhoea, respiratory infections and malnutrition should not be\nconstrued as contraindications to immunization.\nFLUID AND ELECTROLYTES THERAPY IN CHILDREN\nFluid and electrolyte therapy is divided into three phases: Correction of pre-existing deficits\nlike rehydration therapy for diarrhea. Provision of maintenance requirements for normal\nmetabolism, correction of ongoing losses (diarrhea, vomiting) or removal (suction,\naspiration). The maintenance requirements are as follows:"
+      }
+    ],
+    "good_count": 5,
+    "noisy_count": 0
+  }
+}
